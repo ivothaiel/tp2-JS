@@ -1,12 +1,11 @@
-import { actualizaTexto } from "./utils";
+import { actualizarTexto } from "./utils.js";
 
 //seleccionamos los elementos
-const button = document.querySelector("#changebutton");
+
+const boton = document.querySelector("#botonCambiar");
 const parrafo = document.querySelector("#texto");
 
-
-//agregamos el evento del click
-button.addEventListener("click", () => {
-    //actualizamos el texto
-    actualizaTexto(parrafo, "Este texto ha sido actualizado");
-});  //cerramos el evento del click
+//agregar evento de clic
+boton.addEventListener("click", () => {
+    actualizarTexto(parrafo, "Hola, soy el nuevo texto");
+}); 

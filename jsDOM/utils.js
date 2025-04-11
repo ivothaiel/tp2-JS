@@ -1,41 +1,40 @@
+//actualiza el texto de un elemento en el DOM
+export const actualizarTexto = (elemento, Nuevotexto) => {
+    elemento.textContent = Nuevotexto;
+}
 
-//para actualizar el texto
-export const actualizaTexto = (elemento, nuevoTexto) => {
-    elemento.textContent = nuevoTexto;}
-
-
-    //para agregar un evento
+//agrega o quita una clase css segun una condicion
 export const alternarClase = (elemento, clase, condicion) => {
     if (condicion) {
         elemento.classList.add(clase);
-        } else {
-         elemento.classList.remove(clase);
-         }
+    } else {
+        elemento.classList.remove(clase);
+    }
 };
 
-//obtener un elemento random de un array
-export const getRandomItem = (array) => {
-    return array[Math.floor(Math.random() * array.length)];
+//obtiene un elemento aleatorio de un arreglo
+export const getRandomItem = (arr) => {
+    return arr[Math.floor(Math.random() * arr.length)];
 };
 
-
-//mostrar mensaje
-export const mostrarMensaje = (mensaje) => {
+//registra el mensaje por consola
+export const logMensaje = (mensaje) => {
     console.log(mensaje);
 };
 
-//esta funcion devuelve un objeto con la informacion de un elemento 
-export const actualizarDesplegable = (desplegable, valor) =>{
+export const actualizarDesplegable = (desplegable, valor) => {
     desplegable.value = valor;
-}
+};
+export const formatearAlerta = (name, surname, idnumber) => {
+    return `Los datos ingresados son:\nNombre: ${name}\nApellido: ${surname}\nLibreta Universitaria: ${idnumber}`;
+};
 
-//capitales de paises en un mapping
+//mapeo de paises a capitales
 export const capitalMap = {
     Argentina: "Buenos Aires",
     Brasil: "Brasilia",
     Chile: "Santiago",
     Colombia: "Bogota",
     Mexico : "Ciudad de Mexico",
-    Peru: "Lima"
+    Peru: "Lima",
 };
-    
