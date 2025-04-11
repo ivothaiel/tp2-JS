@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <script>
+        const contarLetraA = (cadena) => {
+            let contador = 0;
+            for (let i = 0; i < cadena.length; i++) {
+                if (cadena[i] === 'a' || cadena[i] === 'A') {
+                    contador++;
+                }
+            }
+        return contador;  
+        }
+        const cadena = "La casa azul tiene un perro que se llama Max";
+        console.log(contarLetraA(cadena));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
