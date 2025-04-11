@@ -8,8 +8,8 @@ paises.addEventListener("change", () =>{ //SE VA A ACTIVAR CUANDO CAMBIA EL PAIS
         Argentina: "Buenos Aires",
         Brasil: "Brasilia",
         Chile: "Santiago",
-        Colombia: "Bogotá",
-        Mexico : "Ciudad de México",
+        Colombia: "Bogota",
+        Mexico : "Ciudad de Mexico",
         Peru: "Lima",
     };
     capitales.value = capitalMap[pais] || "No hay capital para este pais"; //SE MUESTRA LA CAPITAL DEL PAIS SELECCIONADO 
