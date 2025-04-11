@@ -1,8 +1,12 @@
-//seleccionamos los elementos por el id
-const button = document.querySelector("#changebutton");
-const parrafo = document.querySelector("#text");
+import { actualizaTexto } from "./utils";
 
-//creamos el evento con la funcion flecha
-button.addEventListener("click", () =>{
-    parrafo.textContent = "¡Hola! Soy un parrafo nuevo";
-});
+//seleccionamos los elementos
+const button = document.querySelector("#changebutton");
+const parrafo = document.querySelector("#texto");
+
+
+//agregamos el evento del click
+button.addEventListener("click", () => {
+    //actualizamos el texto
+    actualizaTexto(parrafo, "Este texto ha sido actualizado");
+});  //cerramos el evento del click
